@@ -17,7 +17,7 @@ data "aws_security_group" "rebel_sg" {
 data "aws_subnet" "rebel_subnet" {
     filter {
       name = "tag:Name"
-      values = "My-Subnet-us-east-1c"
+      values = [ "My-Subnet-us-east-1c" ]
     }
   
 }
